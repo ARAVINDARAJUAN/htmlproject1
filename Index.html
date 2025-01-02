@@ -1,1 +1,135 @@
-
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index.html</Index></title>
+</head>
+<body>
+    <style>
+        body{
+            background: rgb(2,0,36);
+background: linear-gradient(9deg, rgba(2,0,36,1) 0%, rgba(173,128,180,0.7343312324929971) 30%, rgba(0,212,255,1) 75%);
+        }
+    fieldset{
+            width: 400;
+            border-radius: 30px;
+            color: rgb(5, 94, 202);
+            border: 3px solid;
+    }
+    label{
+        color: rgb(1, 19, 22);
+    }
+   input:required{
+        border: 2 ;
+        border-radius: 20;
+        border-color: rgb(226, 135, 135);
+        background-origin: padding-box;
+        background: local;
+    }
+    input:optional{
+        border: dashed;
+        border-radius: 20;
+        border-color: green;
+        border-width: 1px;
+    }
+    input[readonly]{
+        border-radius: 20;
+        background-color: aqua;
+        border-color: blue;
+    }
+    input[submit]{
+        border: solid;
+        border-radius: 20;
+        border-color: black;
+        background-color: rgb(224, 22, 49);
+    }
+    </style>
+   <marquee behavior="" direction="left"> <h1>Course Registration form</h1></marquee>
+    <form action="">
+        <fieldset>
+            <legend>Personal Details </legend>
+        <table>
+            <tr>
+                <td><label for="">Name</label></td>
+                <td><input type="text" name="" id="" placeholder="ex: raju" required><br/></td>
+            </tr>
+        <tr>
+      <td>  <label for="">surname</label></td>
+       <td> <input type="text" name="" id="" optional><br/></td>
+    </tr>
+    <tr>
+        <td><label for="">mobile number</label></td>
+        <td><input type="tel" name="" id="" placeholder="ex: 1234567890" required><br/></td>
+    </tr>
+        <tr>
+            <td><label for="">email</label></td>
+            <td><input type="email" name="" id="" placeholder="ex: raju@gmail.Com" required><br/></td>
+        </tr>
+        <tr>
+        <td><label for="">Password</label></td>
+        <td> <input type="password" name="" id=""  required><br/></td>
+    </tr>
+        <tr>
+            <td>
+            <label for="">Confirm password</label>
+            </td>
+            <td>
+            <input type="password" name="" id="" required ><br/>
+            </td>
+        </tr>
+        <tr>
+            <td><label for="">DOB</label></td>
+            <td> <input type="date" name="" id="" required><br/></td>
+        </tr>
+        <tr>
+        <td>    
+        <label for="">Gender</label></td>
+       <td> <input type="radio" name="Gender" id="M">Male
+        <input type="radio" name="Gender" id="F">Female
+        <input type="radio" name="Gender" id="O">Others <br/>
+        </td>
+        </tr>
+        <tr>
+            <td><label for="">Select Country</label></td>
+        <td>
+        <select name="" id="">
+            <option value="">India</option>
+            <option value="">USA</option>
+            <option value="">SA</option>
+            <option value="">Russia</option>
+        </select><br/>
+    </td>
+    </tr>
+       <tr>
+    <td><label for="">upload img</label></td>
+        <td><input type="file" name="" id="" required><br/></td>
+        
+        </tr>
+        <tr>
+        <td><input type="reset" name="" id=""><br/></td>
+    </tr>
+    </table>
+</fieldset>
+    <fieldset>
+        <legend>Course details</legend>
+        <table>
+                    <label for="">Select course</label>           
+                    <select name="" id="">
+                        
+                        <option value="jfs">java full stack</option>
+                        <option value="pfs">python full stack</option>
+                        <option value="sdb">sql data base</option>
+                    </select><br/>
+                <label for="">Payment mode</label>
+                        <input type="radio" name="Payment mode" id="Online">Online
+                        <input type="radio" name="Payment mode" id="Offline">Offline<br/>
+                        <label for="">Institute Name</label>
+                        <input type="" name="" value="TAP ACADEMY" readonly><br/>
+                         <label for="">Comments</label><br/>
+                        <textarea name="" id="" cols="20" rows="5"></textarea><br/> 
+                        <input type="submit" name="" id="" submit>    
+    </fieldset>
+    </form>
+</body>
+</table>
+</html>
